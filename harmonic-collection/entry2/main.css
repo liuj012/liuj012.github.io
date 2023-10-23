@@ -2,6 +2,11 @@ body{
 	background-color: #32a056;
 }
 
+.navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
 .home {
    font-family: "new-spirit", serif;
    font-weight: 300;
@@ -35,38 +40,69 @@ body{
 	font-size: 100px;
 	text-align: center;
 	margin-top: -10px;
+	margin-bottom: 25px;
 }
 
 .container {
 	display: flex;
-	width: 100vw;
+	width: 100%;
 }
 
 .column1 {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
 	text-align: center;
-	width: 100vw
+	width: 50%;
 }
 
 .column2 {
 	display: flex;
-	justify-content: flex-end;
+	width: 50%;
 }
 
 .bingoboard {
-	width: 60%;
-	padding: 20px;
-}
-
-.images {
 	width: 100%;
 }
 
-.text {
-	font-size: 300px;
+.images {
+	width: 50%;
+	margin-bottom: 10px;
 }
+
+.text {
+	font-size: 45px;
+	margin-top: 20px;
+	padding: 40px;
+	font-family: "new-spirit", serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #f7ca46;
+}
+
+.end {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10%;
+}
+
+.grandma {
+	width: 20%;
+}
+
+.ty {
+	font-family: "sweet-fancy-script", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	color: #fff;
+	font-size: 90px;
+	text-align: center;
+	margin-left: 30px;
+}
+
 
 @media (max-width: 1000px) {
 	body {
@@ -74,6 +110,36 @@ body{
 	}
 	.type {
 		font-size: 60px;
+	}
+
+	.container {
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+
+	}
+
+	.column1 {
+		margin-bottom: 20px;
+	}
+
+	.column2 {
+		width: 80%;
+	}
+
+	.text {
+		font-size: 15px;
+		padding: 10px;
+	}
+
+	.end {
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.ty {
+		font-size: 60px;
+		margin-left: 0px;
 	}
 }
 

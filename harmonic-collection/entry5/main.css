@@ -4,6 +4,11 @@ body {
 	background-size: cover;
 }
 
+.navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
 .home {
    font-family: "new-spirit", serif;
    font-weight: 300;
@@ -47,7 +52,7 @@ body {
 .second {
 	text-align: center;
 	margin-top: 200px;
-	font-family: new-kansas, sans-serif;
+	font-family: "new-kansas", sans-serif;
 	font-weight: 500;
 	font-style: normal;
 	color: #333333;

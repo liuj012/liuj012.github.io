@@ -1,0 +1,127 @@
+body {
+	background-color: #f7ca46;
+
+}
+
+
+.tree {
+	position: sticky;
+	margin-left: 30vw;
+	top: 5vh;
+}
+
+.treeimg {
+	width: 20%;
+
+}
+
+.tree:hover{
+	opacity: 0%;
+}
+
+.windmill {
+	position: sticky;
+	margin-left: 55vw;
+	top: 5vh;
+
+}
+
+.windmillimg {
+	width: 30%;
+}
+
+.windmill:hover{
+	opacity: 0%;
+}
+
+.house {
+	position: sticky;
+	margin-left: 50vw;
+	top: 20vh;
+}
+
+.houseimg {
+	width: 40%;
+}
+
+.house:hover{
+	opacity: 0%;
+}
+
+.barn {
+	position: sticky;
+	margin-left: 150px;
+	top: 550px;
+
+}
+
+.barnimg {
+	width: 30%;
+}
+
+.barn:hover{
+	opacity: 0%;
+}
+
+.cow {
+	position: sticky;
+	margin-left: 450px;
+	top: 650px;
+		height: 90vh;
+
+}
+
+.cowimg {
+	width: 20%;
+}
+
+.cow:hover{
+	opacity: 0%;
+}
+
+.clover {
+	margin-left: 470px;
+	position: sticky;
+	top: 670px;
+	z-index: -1;
+		height: 90vh;
+
+}
+
+.cloverimg {
+	width: 25px;
+}
+
+.background {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	width: 90vw;
+	align-items: center;
+	z-index: -9999;
+}
+
+.grass {
+	position:relative;
+	width: 90%;
+}
+
+.grass2 {
+	position:relative;
+	bottom: 50px;
+	width: 85%;
+}
+
+@media (max-width: 1000px) {
+	.grass2 {
+		bottom: 40px;
+	}
+
+	.tree {
+		top: 65vh;
+	}
+
+	.windmill {
+		top: 65vh;
+	}
+}

@@ -2,6 +2,11 @@ body {
 	background-color: #da3832;
 }
 
+.navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
 .home {
    font-family: "new-spirit", serif;
    font-weight: 300;
