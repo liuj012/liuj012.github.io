@@ -1,70 +1,104 @@
-body{
-	background-image: url("imgs/stars.jpg");
-	background-repeat: repeat, norepeat;
-	background-size: cover;
-	margin: 0;
+body {
+	background-color: #da3832;
+}
+
+.home {
+   font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: #fff;
+}
+
+.heading {
+	text-align: center;
 	padding: 0;
 }
 
-.special{
-	font-family: lores-12-narrow, sans-serif;
-	font-weight: 400;
+.collage {
+	width: 50%;
+}
+
+.intro {
+	font-family: "sweet-fancy-script", sans-serif;
+	font-weight: 500;
 	font-style: normal;
-	color: #ffffff;
-	font-size: 22px;
-	background-color: #cc3333;
-	position: relative;
-	top: 30px;
-	padding: 15px;
-	z-index: 2;
+	color: #f7ca46;
+	text-align: center;
+	font-size: 80px;
+	margin-top: -1em;
 }
 
-.main{
-	font-family: obviously-compressed, sans-serif;
-	font-weight: 900;
+.ballpic {
+	text-align: center;
+	margin-top: 10%;
+}
+
+.ball {
+	width: 40%;
+}
+
+/* got help for this from codepen */
+ 
+.ball:hover {
+  	animation: diagonal-move-anim 0.2s linear infinite alternate;
+}
+
+@keyframes diagonal-move-anim {
+
+	0% {
+		transform: translate(0, 0);
+	}
+
+	100% {
+		transform: translate(-30px, 30px);
+	}
+}
+
+.inputs {
+	text-align: center;
+	margin-top: 70px;
+}
+
+input {
+	width: 20%;
+}
+
+.enter {
+	text-align: center;
+	font-family: "sweet-fancy-script", sans-serif;
+	font-weight: 500;
 	font-style: normal;
-	color: #ffff33;
-	font-size: 250px;
-	position: relative;
-	top: 120px;
-	margin-left: 50px;
-	line-height: 210px;
+	font-size: 150px;
+	margin-top: -50px;
 }
 
-.second{
-	font-family: obviously, sans-serif;
-	font-weight: 700;
-	font-style: normal;
-	color: #ffff33;
-	font-size: 25px;
-	margin-left: 50px;
-	position: relative;
-	top: 160px;
+a {
+	color: #f7ca46;
+	text-decoration: none;
 }
 
-img{
-	position: absolute;
-	top: 250px;
-	left: 750px;
-	font-size: 50px;
-	width: 450px;
+.gif{
+	width: 100%;
 }
 
-input{
-	position: absolute;
-	top: 780px;
-	left: 900px;
-	width: 200px;	
+.footer {
+	text-align: center;
+	margin-top: 1%;
 }
 
-.back{
-	color: #ffffff;
-	font-family: findreplace, sans-serif;
-font-weight: 900;
-font-style: normal;
-	font-size: 50px;
-	position: absolute;
-	left: 1310px;
-	top: -15px;
-	z-index: 1;
+@media (max-width: 1000px) {
+	.intro {
+		font-size: 40px;
+		margin-top: -10px;
+	}
+
+	.collage {
+		width: 80%;
+	}
+
+	.enter {
+		font-size: 80px;
+		margin-top: -30px;
+	}
 }

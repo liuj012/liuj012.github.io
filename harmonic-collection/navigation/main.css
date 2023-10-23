@@ -1,0 +1,20 @@
+body {
+	background-color: #f54db2;
+}
+
+div {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+a {
+	color: #f7ca46;
+	font-family: "new-spirit", serif;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 40px;
+	text-decoration: none;
+}

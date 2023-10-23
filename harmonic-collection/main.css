@@ -1,0 +1,35 @@
+body {
+	background-color: #f54db2;
+	height: 100vh; 
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.welcome {
+	font-family: "sweet-fancy-script", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	color: #f7ca46;
+	font-size: 300px;
+}
+
+.enter {
+	color: #f7ca46;
+	font-family: "new-spirit", serif;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 40px;
+	margin-top: -5%;
+	text-decoration: none;
+}
+
+.enter:hover {
+	color: #fff;
+}

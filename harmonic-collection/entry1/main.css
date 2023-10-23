@@ -1,0 +1,87 @@
+body {
+   background-color: #344bf9;
+}
+
+.home {
+   font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: #fff;
+}
+
+.popup {
+   position:absolute;
+   margin-left: 50%;
+   background: #fff;
+   padding:5px;
+   width:20%;
+   display:none;
+   font-size: 20px;
+   font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+}
+
+.chance:hover + .popup, .popup:hover {
+   display:block
+}
+
+.chance:hover {
+   color: #fc7b27;
+   font-family: "antipol-variable", sans-serif;
+   font-variation-settings: "STCH" 30, "wdth" 100, "wght" 700;
+}
+
+.chance {
+   font-family: "antipol-variable", sans-serif;
+   font-variation-settings: "STCH" 1, "wdth" 100, "wght" 300;
+   font-size: 200px;
+   color: #fff;
+   text-decoration: none;
+   align-content: center;
+}
+
+.text {
+   text-align: center;
+   margin-top: 20%;
+}
+
+.body {
+   text-align: center;
+   margin-top: 15%;
+   font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+   font-size: 30px;
+   padding: 50px;
+   color: #fff;
+}
+
+.next {
+   text-align: center;
+   color: #fc7b27;
+   font-family: "sweet-fancy-script", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+   font-size: 150px;
+   text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+   .chance {
+      font-size: 80px;
+   }
+
+   .chance:hover {
+      font-variation-settings: "STCH" 20, "wdth" 100, "wght" 700;
+   }
+
+   .popup {
+      font-size: 10px;
+   }
+
+   .body {
+      font-size: 20px;
+   }
+}

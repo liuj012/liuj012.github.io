@@ -1,0 +1,32 @@
+body {
+   background-color: #344bf9;
+}
+
+.home {
+   font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: #fff;
+}
+
+img {
+	width: 80%;
+}
+
+.dice {
+	display:flex;
+	justify-content: center;
+	margin-top: 2%;
+}
+
+.next {
+   text-align: center;
+   color: #fc7b27;
+   font-family: "sweet-fancy-script", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+   font-size: 150px;
+   text-decoration: none;
+   margin-top: -6%;
+}

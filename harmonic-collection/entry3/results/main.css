@@ -1,0 +1,35 @@
+body{
+	background-color: #da3832;
+}
+
+.ball {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-top: 10%;
+}
+
+.image {
+	width: 30%;
+}
+
+.text {
+	text-align: center;
+	margin-top: 1%;
+	text-align: center;
+	font-family: "sweet-fancy-script", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 150px;
+}
+
+a{
+	color: #f7ca46;
+	text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+	.image {
+		width: 80%;
+	}
+}
