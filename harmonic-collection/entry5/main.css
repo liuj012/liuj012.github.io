@@ -4,6 +4,22 @@ body {
 	background-size: cover;
 }
 
+.home {
+   font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: #fff;
+}
+
+.next {
+	font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: #fff;
+}
+
 .heading {
 	font-family: "antipol-variable", sans-serif;
 	font-variation-settings: "STCH" 1, "wdth" 100, "wght" 564;

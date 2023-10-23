@@ -1,11 +1,17 @@
 body{
 	background-color: #32a056;
-	padding: 0;
-	margin: 0;
 }
 
 .home {
    font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: #fff;
+}
+
+.next {
+	font-family: "new-spirit", serif;
    font-weight: 300;
    font-style: normal;
    text-decoration: none;

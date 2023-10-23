@@ -10,6 +10,14 @@ body {
    color: #fff;
 }
 
+.next {
+	font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: #fff;
+}
+
 .heading {
 	text-align: center;
 	padding: 0;

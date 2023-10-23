@@ -7,6 +7,22 @@ body {
 	margin: 0;
 }
 
+.home {
+   font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: #fff;
+}
+
+.next {
+	font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: #fff;
+}
+
 .first {
 	background-image: url(imgs/sky.png);
 	background-size: cover;
