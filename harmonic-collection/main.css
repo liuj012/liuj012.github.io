@@ -34,7 +34,7 @@ body {
 	color: #fff;
 }
 
-@media {
+@media (max-width: 1000px) {
 	.welcome {
 		font-size: 150px;
 	}
