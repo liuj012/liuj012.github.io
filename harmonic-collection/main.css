@@ -33,3 +33,14 @@ body {
 .enter:hover {
 	color: #fff;
 }
+
+@media {
+	.welcome {
+		font-size: 150px;
+	}
+
+	.enter {
+		font-size: 30px;
+		margin-top: -10%;
+	}
+}
