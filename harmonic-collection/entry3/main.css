@@ -86,6 +86,10 @@ input {
 	margin-top: -50px;
 }
 
+a:hover {
+	color: #fff;
+}
+
 a {
 	color: #f7ca46;
 	text-decoration: none;
