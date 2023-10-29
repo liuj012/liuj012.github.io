@@ -2,23 +2,30 @@ body {
 	background-color: #f54db2;
 }
 
-div {
+.navigation {
 	display: flex;
-	flex-direction: column;
-	text-align: center;
-	justify-content: center;
-	height: 100vh;
+	justify-content: space-between;
 }
 
-a {
-	color: #f7ca46;
+.home {
+   font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: #fff;
+}
+
+.next {
 	font-family: "new-spirit", serif;
-	font-weight: 300;
-	font-style: italic;
-	font-size: 40px;
-	text-decoration: none;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: #fff;
 }
 
-a:hover {
-	color:#fff;
+.main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
