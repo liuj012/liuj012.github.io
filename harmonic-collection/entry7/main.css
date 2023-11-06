@@ -1,0 +1,135 @@
+body {
+	background-color: #ff8d3a;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+.home {
+   font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: #fff;
+}
+
+.next {
+	font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: #fff;
+}
+
+.first {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+svg {
+	width: 60%;
+}
+
+.cls-1 {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    stroke-dasharray: 1000;
+  	stroke-dashoffset: 1000;
+  	animation: dash 6s forwards;
+}
+
+.cls-2 {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    stroke-dasharray: 1000;
+  	stroke-dashoffset: 1000;
+  	animation: dash 10s forwards;
+  	animation-delay: 5.7s;
+}
+
+.second {
+	text-align: center;
+	margin-top: 50px;
+	width: 900px;
+}
+
+#word {
+	width: 50%;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.image {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.cookie {
+	width: 30%;
+}
+
+.instructions {
+	font-family: "new-spirit", serif;
+	font-weight: 300;
+	font-style: normal;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	margin-top: 10%;
+}
+
+.gif {
+	display: flex;
+	width: 100vw;
+	height: 600px;
+	margin-bottom: 100px;
+	align-items: center;
+	justify-content: center;
+}
+
+video {
+	width: 65%;
+}
+
+.end {
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.last {
+	width: 40%;
+}
+
+@media (max-width: 1000px) {
+	.instructions {
+		font-size: 18px;
+		margin-top: 30%;
+	}
+
+	.gif {
+		height: 300px;
+	}
+
+	video {
+		height: 100px;
+	}
+}
