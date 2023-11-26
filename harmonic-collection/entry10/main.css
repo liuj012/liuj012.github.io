@@ -1,0 +1,112 @@
+body {
+   background-color: #eb4034;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+.home {
+   font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+   text-decoration: none;
+   color: #fff;
+}
+
+.first {
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+}
+
+.title {
+   width: 50%;
+}
+
+.instructions {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.lineone {
+   text-align: center;
+   font-size: 150px;
+   font-family: "sweet-fancy-script", sans-serif;
+   font-weight: 500;
+   color: #f7ca46;
+   margin-top: 5%;
+   margin-bottom: -1.5%;
+}
+
+.main {
+   font-size: 35px;
+   font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+   color: white;
+   text-align: center;
+}
+
+.one, .two, .three, .four, .five, .six {
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 8%;
+}
+
+.options {
+   width: 100vsw;
+   display: flex;
+   justify-content: center;
+   margin-top: 3%;
+}
+
+button {
+   width: 90px;
+   height: 40px;
+   margin: 10px;
+   font-family: "new-spirit", serif;
+   font-weight: 300;
+   color: #f7ca46;
+   font-style: normal;
+   text-align: center;
+   background-color: #3743dc;
+}
+
+.congrats {
+   text-align: center;
+   font-size: 150px;
+   font-family: "sweet-fancy-script", sans-serif;
+   font-weight: 500;
+   color: #f7ca46;
+   margin-top: 5%;
+   line-height: 0.8;
+}
+
+.number {
+   width: 20%;
+}
+
+#hidden {
+   display: none;
+}
+
+@media (max-width: 1000px){
+   .congrats {
+      font-size: 50px;
+   }
+
+   .lineone {
+      font-size: 50px;
+   }
+
+   .main {
+      font-size: 15px;
+   }
+
+}
