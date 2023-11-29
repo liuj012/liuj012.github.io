@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var imageUrl = 'imgs/star.png';
-    var imageWidth = 70; // Replace with your desired width
-    var imageHeight = 70;
+    let imageUrl = 'imgs/star.png';
+    let imageWidth = 70;
+    let imageHeight = 70;
 
 
     function insertImage(event) {
 
-        var imgElement = document.createElement('img');
+        let imgElement = document.createElement('img');
 
 
         imgElement.src = imageUrl;
@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         imgElement.style.left = event.clientX + "px";
         imgElement.style.top = event.clientY + "px";
+        console.log(event.clientX, event.clientY);
 
         document.body.appendChild(imgElement);
     }
