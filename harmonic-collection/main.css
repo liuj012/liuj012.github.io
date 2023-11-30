@@ -44,3 +44,14 @@ body {
 		margin-top: -10%;
 	}
 }
+
+@media (max-device-width:1000px) {
+	.welcome {
+		font-size: 100px;
+	}
+
+	.enter {
+		font-size: 30px;
+		margin-top: -10%;
+	}
+}

@@ -45,8 +45,10 @@ body{
 }
 
 .container {
+	position: relative;
 	display: flex;
 	width: 100%;
+	padding: 10px;
 }
 
 .column1 {
@@ -109,6 +111,7 @@ body{
 	body {
 		margin-top: 20px;
 	}
+	
 	.type {
 		font-size: 60px;
 	}
@@ -138,6 +141,17 @@ body{
 		flex-wrap: wrap;
 	}
 
+	.ty {
+		font-size: 60px;
+		margin-left: 0px;
+	}
+}
+
+@media (max-device-width: 770px) {
+	.type {
+		font-size: 60px;
+	}
+	
 	.ty {
 		font-size: 60px;
 		margin-left: 0px;

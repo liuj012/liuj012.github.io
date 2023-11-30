@@ -1,26 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
     let imageUrl = 'imgs/star.png';
-    let imageWidth = 70;
-    let imageHeight = 70;
-
+    let imageWidth = 200;
+    let imageHeight = 200;
 
     function insertImage(event) {
-
         let imgElement = document.createElement('img');
-
+         let container = document.querySelector(".container");
+        container.appendChild(imgElement);
 
         imgElement.src = imageUrl;
         imgElement.width = imageWidth;
         imgElement.height = imageHeight;
 
-
         imgElement.style.position = 'absolute';
-        
-        imgElement.style.left = event.clientX + "px";
-        imgElement.style.top = event.clientY + "px";
+        imgElement.style.left = (event.clientX - imageWidth / 2) + "px";
+        imgElement.style.top = (event.clientY - imageHeight/1.5) + "px";
         console.log(event.clientX, event.clientY);
 
-        document.body.appendChild(imgElement);
+        container.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
     }
 
     document.addEventListener('click', insertImage);
