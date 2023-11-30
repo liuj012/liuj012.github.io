@@ -1,22 +1,10 @@
-@font-face {
-    font-family: 'glyphworldflower';
-    src: url('font/glyphworld-flower-webfont.woff2') format('woff2'),
-         url('font/glyphworld-flower-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-*{
-	cursor: url('imgs/bee.png'), auto;
-}
-
 body {
-    background-image: url("imgs/field.png");
-	background-repeat: repeat, no-repeat;
-	background-size: cover;
-	padding: 0px;
+	background-color: #ff64a9;
+}
 
+.navigation {
+	display: flex;
+	justify-content: space-between;
 }
 
 .home {
@@ -35,97 +23,84 @@ body {
    color: #fff;
 }
 
-
-.first {
-	text-align: center;
-	padding: 50px;
-	font-family: nautica, sans-serif;
-	font-weight: 700;
-	font-style: normal;
-	font-size: 60px;
-	color: #ff9999;
-	z-index: 2;
+.text {
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
-.second {
-	text-align: center;
-	color: #ffcc66;
-	font-family: glyphworldflower;
-	font-size: 120px;
-	position: relative;
-	top: -180px;
-	z-index: -1;
+.name {
+   font-family: "sweet-fancy-script", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+   color: #f7ca46;
+   font-size: 120px;
 }
 
-.staticone {
-	position:relative;
-	margin-left: 300px;
-	width: 300px;
-	border: 10px solid #ff9999;
+.instructions {
+   font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+   color: white;
+   font-size: 30px;
+   margin-top: -2%;
 }
 
-.staticone:hover {
-	opacity: 0;
+.main {
+   display: flex;
+   width: 80vw;
+   justify-content: space-between;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 5%;
+   margin-bottom: 5%;
 }
 
-.activeone {
-	position: relative;
-	margin-left: -324px;
-	z-index: -1;
-	width: 300px;
-	border: 10px solid #ff9999;
+.bw {
+   filter: grayscale(100%);
 }
 
-.statictwo {
-	position:relative;
-	margin-left: 730px;
-	width: 300px;
-	top: -475px;
-	border: 10px solid #ff9999;
+video {
+   width: 50%;
+   cursor: pointer;
 }
 
-.statictwo:hover {
-	opacity: 0;
-}
-
-.activetwo {
-	position: relative;
-	margin-left: -324px;
-	z-index: -1;
-	width: 300px;
-	top: -475px;
-	border: 10px solid #ff9999;
-}
-
-.staticthree {
-	position:relative;
-	margin-left: 1170px;
-	width: 300px;
-	top: -945px;
-	border: 10px solid #ff9999;
-}
-
-.staticthree:hover {
-	opacity: 0;
-}
-
-.activethree {
-	position: relative;
-	margin-left: -324px;
-	z-index: -1;
-	width: 300px;
-	top: -945px;
-	border: 10px solid #ff9999;
+.end {
+   width: 100vw;
+   height: 500px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-image: url("imgs/petals.png");
+   background-size: cover;
 }
 
 .last {
-	position: relative;
-	bottom: 800px;
-	text-align: center;
-	font-family: nautica, sans-serif;
-	font-weight: 700;
-	font-style: normal;
-	font-size: 60px;
-	color: #ffcc66;
-	font-size: 180px;
+   font-family: sweet-fancy-script, sans-serif;
+   font-weight: 500;
+   font-style: normal;
+   font-size: 100px;
+   color: #f7ca46;
+}
+
+@media (max-width: 1000px){
+   .main {
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100vw;
+      align-items: center;
+   }
+
+   .name {
+      font-size: 80px;
+   }
+
+   .instructions {
+      font-size: 20px;
+   }
+
+   .last {
+      font-size: 50px;
+   }
 }
