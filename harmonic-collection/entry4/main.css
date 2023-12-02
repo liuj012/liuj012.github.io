@@ -23,6 +23,18 @@ body {
    color: #fff;
 }
 
+.start {
+   display: flex;
+   justify-content: center;
+   width: 100vw;
+   margin-top: 2%;
+   margin-bottom: 3%;
+}
+
+.gif {
+   width: 40%;
+}
+
 .text {
    width: 100vw;
    display: flex;

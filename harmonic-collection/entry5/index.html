@@ -6,7 +6,7 @@
 	<title> entry 5 </title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="icon" href="imgs/clover.png" alt="clover"/>
-	<link rel="stylesheet" href="https://use.typekit.net/tdt1ypi.css">
+	<link rel="stylesheet" href="https://use.typekit.net/ikm5dlh.css">
 </head>
 <body>
 	<div class="navigation">
@@ -17,35 +17,78 @@
 			next
 		</a>
 	</div>
-	<div class="heading">
-		FIND THE<br>FOUR-LEAF<br>CLOVER
+	<div class="first">
+		<span class="text"> rock, paper, scissor </span> <br>
+		<span class="instruct">click on an image to pick!</span>
 	</div>
-	<div class="sea">
-		<img src="imgs/water.png" class="sea">
+	<div class="main">
+		<img src="imgs/rock.png" class="rock">
+		<img src="imgs/paper.png" class="paper">
+		<img src="imgs/scissor.png" class="scissor">
 	</div>
-	<div class="second">
-		Scroll to test your luck!
+	<div class="rock1 hidden">
+		<div class="column">
+			<img src="imgs/rock.png" class="picks">
+			<img src="imgs/rock.png" class="picks">
+		</div>
+		<span class="result">it's a draw! </span>
 	</div>
-	<div class="tree">
-		<img src="imgs/tree.png" class="tree">
+	<div class="rock2 hidden">
+		<div class="column">
+			<img src="imgs/paper.png" class="picks">
+			<img src="imgs/rock.png" class="picks">
+		</div>
+		<span class="result">you lost! </span>
 	</div>
-	<div class="windmill">
-		<img src="imgs/windmill.png" class="windmill">
+	<div class="rock3 hidden">
+		<div class="column">
+			<img src="imgs/scissor.png" class="picks">
+			<img src="imgs/rock.png" class="picks">
+		</div>
+		<span class="result">you won! </span>
 	</div>
-	<div class="house">
-		<img src="imgs/house.png" class="house">
+	<div class="paper1 hidden">
+		<div class="column">
+			<img src="imgs/rock.png" class="picks">
+			<img src="imgs/paper.png" class="picks">
+		</div>
+		<span class="result">you won! </span>
 	</div>
-	<div class="barn">
-		<img src="imgs/barn.png" class="barn">
+	<div class="paper2 hidden">
+		<div class="column">
+			<img src="imgs/paper.png" class="picks">
+			<img src="imgs/paper.png" class="picks">
+		</div>
+		<span class="result">it's a draw! </span>
 	</div>
-	<div class="cow">
-		<img src="imgs/cow.png" class="cow">
+	<div class="paper3 hidden">
+		<div class="column">
+			<img src="imgs/scissor.png" class="picks">
+			<img src="imgs/paper.png" class="picks">
+		</div>
+		<span class="result">you lost! </span>
 	</div>
-	<div class="clover">
-		<img src="imgs/clover.png" class="clover">
+	<div class="scissor1 hidden">
+		<div class="column">
+			<img src="imgs/rock.png" class="picks">
+			<img src="imgs/scissor.png" class="picks">
+		</div>
+		<span class="result">you lost! </span>
 	</div>
-	<div class="last">
-		where is it hiding?
+	<div class="scissor2 hidden">
+		<div class="column">
+			<img src="imgs/paper.png" class="picks">
+			<img src="imgs/scissor.png" class="picks">
+		</div>
+		<span class="result">you won! </span>
 	</div>
+	<div class="scissor3 hidden">
+		<div class="column">
+			<img src="imgs/scissor.png" class="picks">
+			<img src="imgs/scissor.png" class="picks">
+		</div>
+		<span class="result">it's a draw! </span>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

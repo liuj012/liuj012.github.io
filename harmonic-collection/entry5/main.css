@@ -1,7 +1,5 @@
 body {
-	background-image: url('imgs/sky.png');
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: #f7ca46;
 }
 
 .navigation {
@@ -25,107 +23,80 @@ body {
    color: #fff;
 }
 
-.heading {
-	font-family: "antipol-variable", sans-serif;
-	font-variation-settings: "STCH" 1, "wdth" 100, "wght" 564;
-	font-size: 130px;
-	line-height: 1;
-	letter-spacing: -5px;
-	color: #ffff00;
-	text-align: center;
-	position: relative;
-	top: 330px;
-	text-shadow: /* had help from chatgpt */
-    -2px -2px 0 #000, 
-    2px -2px 0 #000,  
-    -2px 2px 0 #000,  
-    2px 2px 0 #000;   
+.first {
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 7%;
 }
 
-.sea {
-	width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: -100px;
+.text {
+   font-family: "sweet-fancy-script", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+   color: white;
+   font-size: 120px;
+   margin-bottom: -1%;
 }
 
-.second {
-	text-align: center;
-	margin-top: 200px;
-	font-family: "new-kansas", sans-serif;
-	font-weight: 500;
-	font-style: normal;
-	color: #333333;
-	font-size: 30px;
+.instruct {
+   font-family: "new-spirit", serif;
+   font-weight: 300;
+   font-style: normal;
+   color: #fff;
+   font-size: 30px;
 }
 
-.tree {
-	width: 200px;
-	position: sticky;
-	margin-left: 200px;
-	top: 170px;
+.main {
+   display: flex;
+   width: 80vw;
+   justify-content: space-evenly;
+   margin: auto;
 }
 
-.tree:hover{
-	opacity: 0%;
+.rock, .paper, .scissor {
+   width: 15%;
 }
 
-.windmill {
-	width: 150px;
-	position: sticky;
-	margin-left: 550px;
-	top: 200px;
+.rock:hover,
+.paper:hover,
+.scissor:hover {
+   cursor: pointer;
 }
 
-.windmill:hover{
-	opacity: 0%;
+.rock1, .rock2, .rock3,
+.paper1, .paper2, .paper3,
+.scissor1, .scissor2, .scissor3 {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   width: 100vw;
+   margin-top: 15%;
+   margin-bottom: 8%;
 }
 
-.house {
-	width: 350px;
-	position: sticky;
-	margin-left: auto;
-	margin-right: auto;
-	top: 350px;
+.column {
+   width: 50vw;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 5%;
 }
 
-.house:hover{
-	opacity: 0%;
+.picks {
+   width: 30%;
 }
 
-.barn {
-	width: 175px;
-	position: sticky;
-	margin-left: 150px;
-	top: 550px;
+.result {
+   font-family: "sweet-fancy-script", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+   color: white;
+   font-size: 120px; 
 }
 
-.barn:hover{
-	opacity: 0%;
+.hidden {
+   display: none;
 }
-
-.cow {
-	width: 125px;
-	position: sticky;
-	margin-left: 450px;
-	top: 650px;
-}
-
-.cow:hover{
-	opacity: 0%;
-}
-
-.clover {
-	width: 25px;
-	margin-left: 470px;
-	position: sticky;
-	top: 670px;
-	z-index: -1;
-}
-
-.last {
-	text-align: center;
-	margin-top: 750px;
-	opacity: 0%;
-}
-
