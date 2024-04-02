@@ -2,9 +2,15 @@ html{
 	scroll-behavior: smooth;
 }
 
-.top {
-	margin-left: 1%;
+.wrapper {
+	height: 94vh;
+	display: block;
+}
+
+#top {
+	margin-left: 3%;
 	margin-bottom: 2%;
+	margin-top: 2.5%;
 }
 
 .main {
@@ -62,30 +68,367 @@ a {
 	text-decoration: none;
 }
 
+#jun16block {
+	background-image: url("icons/jun16.png");
+}
+
+#jun16block:hover {
+	background-image: url("icons/jun16h.png");
+}
+
 #jun18block {
 	background-image: url("icons/jun18.png");
+}
+
+#jun18block:hover {
+	background-image: url("icons/jun18h.png");
 }
 
 #jun21block {
 	background-image: url("icons/jun21.png");
 }
 
+#jun21block:hover {
+	background-image: url("icons/jun21h.png");
+}
+
+#jun29block {
+	background-image: url("icons/jun29.png");
+}
+
+#jun29block:hover {
+	background-image: url("icons/jun29h.png");
+}
+
 #jul1block {
 	background-image: url("icons/jul1.png");
+}
+
+#jul1block:hover {
+	background-image: url("icons/jul1h.png");
 }
 
 #jul4block {
 	background-image: url("icons/jul4.png");
 }
 
+#jul4block:hover {
+	background-image: url("icons/jul4h.png");
+}
+
 #jul6block {
 	background-image: url("icons/jul6.png");
+}
+
+#jul6block:hover {
+	background-image: url("icons/jul6h.png");
+}
+
+#jul14block {
+	background-image: url("icons/jul14.png");
+}
+
+#jul14block:hover {
+	background-image: url("icons/jul14h.png");
+}
+
+#jul20block {
+	background-image: url("icons/jul20.png");
+}
+
+#jul20block:hover {
+	background-image: url("icons/jul20h.png");
+}
+
+#jul24block {
+	background-image: url("icons/jul24.png");
+}
+
+#jul24block:hover {
+	background-image: url("icons/jul24h.png");
+}
+
+#jul26block {
+	background-image: url("icons/jul24.png");
+}
+
+#jul26block:hover {
+	background-image: url("icons/jul24h.png");
+}
+
+#aug1block {
+	background-image: url("icons/aug1.png");
+}
+
+#aug1block:hover {
+	background-image: url("icons/aug1h.png");
+}
+
+#aug15block {
+	background-image: url("icons/aug15.png");
+}
+
+#aug15block:hover {
+	background-image: url("icons/aug15h.png");
+}
+
+#aug16block {
+	background-image: url("icons/aug16.png");
+}
+
+#aug16block:hover {
+	background-image: url("icons/aug16h.png");
+}
+
+#aug17block {
+	background-image: url("icons/aug17.png");
+}
+
+#aug17block:hover {
+	background-image: url("icons/aug17h.png");
+}
+
+#aug20block {
+	background-image: url("icons/aug20.png");
+}
+
+#aug20block:hover {
+	background-image: url("icons/aug20h.png");
+}
+
+#aug22block {
+	background-image: url("icons/aug22.png");
+}
+
+#aug22block:hover {
+	background-image: url("icons/aug22h.png");
+}
+
+#aug30block {
+	background-image: url("icons/aug30.png");
+}
+
+#aug30block:hover {
+	background-image: url("icons/aug30h.png");
+}
+
+#sep4block {
+	background-image: url("icons/sep4.png");
+}
+
+#sep4block:hover {
+	background-image: url("icons/sep4h.png");
+}
+
+#sep10block {
+	background-image: url("icons/sep10.png");
+}
+
+#sep10block:hover {
+	background-image: url("icons/sep10h.png");
+}
+
+#sep12block {
+	background-image: url("icons/sep12.png");
+}
+
+#sep12block:hover {
+	background-image: url("icons/sep12h.png");
+}
+
+#sep16block {
+	background-image: url("icons/sep16.png");
+}
+
+#sep16block:hover {
+	background-image: url("icons/sep16h.png");
+}
+
+#sep18block {
+	background-image: url("icons/sep18.png");
+}
+
+#sep18block:hover {
+	background-image: url("icons/sep18h.png");
+}
+
+#sep24block {
+	background-image: url("icons/sep24.png");
+}
+
+#sep24block:hover {
+	background-image: url("icons/sep24h.png");
+}
+
+#sep30block {
+	background-image: url("icons/sep30.png");
+}
+
+#sep30block:hover {
+	background-image: url("icons/sep30h.png");
+}
+
+#oct3block {
+	background-image: url("icons/oct3.png");
+}
+
+#oct3block:hover {
+	background-image: url("icons/oct3h.png");
+}
+
+
+#oct6block {
+	background-image: url("icons/oct6.png");
+}
+
+#oct6block:hover {
+	background-image: url("icons/oct6h.png");
+}
+
+#oct8block {
+	background-image: url("icons/oct8.png");
+}
+
+#oct8block:hover {
+	background-image: url("icons/oct8h.png");
+}
+
+#oct13block {
+	background-image: url("icons/oct13.png");
+}
+
+#oct13block:hover {
+	background-image: url("icons/oct13h.png");
+}
+
+#oct16block {
+	background-image: url("icons/oct16.png");
+}
+
+#oct16block:hover {
+	background-image: url("icons/oct16h.png");
+}
+
+#oct22block {
+	background-image: url("icons/oct22.png");
+}
+
+#oct22block:hover {
+	background-image: url("icons/oct22h.png");
+}
+
+#nov1block {
+	background-image: url("icons/nov1.png");
+}
+
+#nov1block:hover {
+	background-image: url("icons/nov1h.png");
+}
+
+#nov4block {
+	background-image: url("icons/nov4.png");
+}
+
+#nov4block:hover {
+	background-image: url("icons/nov4h.png");
+}
+
+#nov13block {
+	background-image: url("icons/nov13.png");
+}
+
+#nov13block:hover {
+	background-image: url("icons/nov13h.png");
+}
+
+
+#nov14block {
+	background-image: url("icons/nov14.png");
+}
+
+#nov14block:hover {
+	background-image: url("icons/nov14h.png");
+}
+
+#nov20block {
+	background-image: url("icons/nov20.png");
+}
+
+#nov20block:hover {
+	background-image: url("icons/nov20h.png");
+}
+
+#dec1block {
+	background-image: url("icons/dec1.png");
+}
+
+#dec1block:hover {
+	background-image: url("icons/dec1h.png");
+}
+
+#dec8block {
+	background-image: url("icons/dec8.png");
+}
+
+#dec8block:hover {
+	background-image: url("icons/dec8h.png");
+}
+
+#dec14block {
+	background-image: url("icons/oct13.png");
+}
+
+#dec14block:hover {
+	background-image: url("icons/oct13h.png");
+}
+
+#dec16block {
+	background-image: url("icons/dec16.png");
+}
+
+#dec16block:hover {
+	background-image: url("icons/dec16h.png");
+}
+
+#dec20block {
+	background-image: url("icons/dec20.png");
+}
+
+#dec20block:hover {
+	background-image: url("icons/dec20h.png");
+}
+
+#dec22block {
+	background-image: url("icons/dec22.png");
+}
+
+#dec22block:hover {
+	background-image: url("icons/dec22h.png");
+}
+
+#dec24block {
+	background-image: url("icons/dec24.png");
+}
+
+#dec24block:hover {
+	background-image: url("icons/dec24h.png");
 }
 
 .italics {
 	font-style: italic;
 	font-weight: bold;
 }
+
+.button {
+	width: 100vw;
+	text-align: center;
+	position: sticky;
+	top: 0;
+	margin-top: 1%;
+	z-index: 1;
+	display: none;
+}
+
 
 @media only screen and (max-width: 1250px){
 	.days{
@@ -139,5 +482,13 @@ a {
 		margin-right: 3%;
 	height: auto;
 	overflow: auto;
+	}
+
+	.button {
+		display: block;
+	}
+
+	.wrapper {
+		height: 100vh;
 	}
 }

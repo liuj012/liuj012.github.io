@@ -1,0 +1,310 @@
+body {
+	background: rgb(129,176,194);
+	background: radial-gradient(circle, rgba(129,176,194,1) 0%, rgba(198,215,221,1) 51%, rgba(94,153,175,1) 100%);
+	animation: gradient 15s ease infinite;
+	background-size: 400% 400%;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.one {
+	width: 100vw;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.envelope {
+	width: 600px;
+	z-index: 2;
+}
+
+.envelope:hover {
+	cursor: pointer;
+}
+
+.popup{
+	font-family: "freight-big-pro", serif;
+	font-weight: 300;
+	font-style: italic;
+	color: #eeb13b;
+    display: none;
+    position: absolute;
+    margin-top: -10%;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    width: 100px;
+    z-index: 3;
+}
+
+.envelope:hover + #popupenvelope {
+    display: block;
+}
+
+.moveback {
+	animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.photo-stack {
+  position: absolute;
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.photo {
+  position: absolute;
+  width: 400px;
+  height: auto;
+}
+
+.photo:hover {
+	cursor: pointer;
+}
+
+.photo-stacktwo {
+	position: absolute;
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.relative {
+	position: relative;
+	width: 400px;
+	margin: 20px;
+}
+
+#one {
+	transform: rotate(20deg);
+	filter: saturate(75%);
+}
+
+#one:hover {
+	cursor: pointer;
+	filter: saturate(100%);
+}
+
+#two {
+	transform: rotate(-15deg);
+	filter: saturate(75%);
+}
+
+#two:hover {
+	cursor: pointer;
+	filter: saturate(100%);
+}
+
+#three {
+	transform: rotate(-5deg);
+	filter: saturate(75%);
+}
+
+#four {
+	transform: rotate(-8deg);
+	filter: saturate(75%);
+}
+
+#four:hover {
+	cursor: pointer;
+	filter: saturate(100%);
+}
+
+#five {
+	transform: rotate(5deg);
+	filter: saturate(75%);
+
+}
+
+#six {
+	transform: rotate(2deg);
+	filter: saturate(75%);
+}
+
+#six:hover {
+	cursor: pointer;
+	filter: saturate(100%);
+}
+
+.shakeone {
+	animation: shakeone 30s;
+	animation-iteration-count: infinite;
+}
+
+.shaketwo {
+	animation: shaketwo 30s reverse;
+	animation-iteration-count: infinite;
+}
+
+.shakethree {
+	animation: shakethree 30s reverse;
+	animation-iteration-count: infinite;
+}
+
+.shakefour {
+	animation: shakefour 30s reverse ease;
+	animation-iteration-count: infinite;
+}
+
+.shakefive {
+	animation: shakefive 30s reverse;
+	animation-iteration-count: infinite;
+}
+
+.shakesix {
+	animation: shakesix 30s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes shakeone {
+  0% { transform: translate(-1px, -1px) rotate(20deg); }
+  10% { transform: translate(1px, 2px) rotate(21deg); }
+  20% { transform: translate(3px, 0px) rotate(19deg); }
+  30% { transform: translate(-3px, -2px) rotate(20deg); }
+  40% { transform: translate(-1px, 1px) rotate(19deg); }
+  50% { transform: translate(1px, -2px) rotate(21deg); }
+  60% { transform: translate(3px, -1px) rotate(20deg); }
+  70% { transform: translate(-3px, -1px) rotate(21deg); }
+  80% { transform: translate(1px, 1px) rotate(19deg); }
+  90% { transform: translate(-1px, -2px) rotate(20deg); }
+  100% { transform: translate(-1px, 2px) rotate(21deg); }
+}
+
+@keyframes shaketwo {
+  0% { transform: translate(-1px, -1px) rotate(-15deg); }
+  10% { transform: translate(1px, 2px) rotate(-16deg); }
+  20% { transform: translate(3px, 0px) rotate(-14deg); }
+  30% { transform: translate(-3px, -2px) rotate(-15deg); }
+  40% { transform: translate(-1px, 1px) rotate(-14deg); }
+  50% { transform: translate(1px, -2px) rotate(-16deg); }
+  60% { transform: translate(3px, -1px) rotate(-15deg); }
+  70% { transform: translate(-3px, -1px) rotate(-16deg); }
+  80% { transform: translate(1px, 1px) rotate(-14deg); }
+  90% { transform: translate(-1px, -2px) rotate(-15deg); }
+  100% { transform: translate(-1px, 2px) rotate(-16deg); }
+}
+
+@keyframes shakethree {
+  0% { transform: translate(1px, 1px) rotate(-5deg); }
+  10% { transform: translate(-1px, -2px) rotate(-6deg); }
+  20% { transform: translate(-3px, 0px) rotate(-4deg); }
+  30% { transform: translate(3px, 2px) rotate(-5deg); }
+  40% { transform: translate(1px, -1px) rotate(-4deg); }
+  50% { transform: translate(-1px, 2px) rotate(-6deg); }
+  60% { transform: translate(-3px, 1px) rotate(-5deg); }
+  70% { transform: translate(3px, 1px) rotate(-6deg); }
+  80% { transform: translate(-1px, -1px) rotate(-4deg); }
+  90% { transform: translate(1px, 2px) rotate(-5deg); }
+  100% { transform: translate(0px, 0px) rotate(-5deg); }
+}	
+
+@keyframes shakefour {
+  0% { transform: translate(-1px, -1px) rotate(-8deg); }
+  10% { transform: translate(1px, 2px) rotate(-9deg); }
+  20% { transform: translate(3px, 0px) rotate(-7deg); }
+  30% { transform: translate(-3px, -2px) rotate(-8deg); }
+  40% { transform: translate(-1px, 1px) rotate(-9deg); }
+  50% { transform: translate(1px, -2px) rotate(-9deg); }
+  60% { transform: translate(3px, -1px) rotate(-8deg); }
+  70% { transform: translate(-3px, -1px) rotate(-9deg); }
+  80% { transform: translate(1px, 1px) rotate(-7deg); }
+  90% { transform: translate(-1px, -2px) rotate(-8deg); }
+  100% { transform: translate(-1px, 2px) rotate(-9deg); }
+}
+
+@keyframes shakefive {
+  0% { transform: translate(1px, 1px) rotate(5deg); }
+  10% { transform: translate(-1px, -2px) rotate(4deg); }
+  20% { transform: translate(-3px, 0px) rotate(6deg); }
+  30% { transform: translate(3px, 2px) rotate(5deg); }
+  40% { transform: translate(1px, -1px) rotate(6deg); }
+  50% { transform: translate(-1px, 2px) rotate(4deg); }
+  60% { transform: translate(-3px, 1px) rotate(5deg); }
+  70% { transform: translate(3px, 1px) rotate(4deg); }
+  80% { transform: translate(-1px, -1px) rotate(6deg); }
+  90% { transform: translate(1px, 2px) rotate(5deg); }
+  100% { transform: translate(0px, 0px) rotate(5deg); }
+}
+
+@keyframes shakesix {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+.bottomtext {
+	text-align: center;
+	font-family: "freight-big-pro", serif;
+	font-weight: 600;
+	color: #305ea7;
+	font-style: italic;
+	font-size: 40px;
+	margin-top: -3.5%;
+}
+
+.sound {
+	display: flex;
+	width: 98vw;
+	justify-content: flex-end;
+	margin-top: -5%;
+}
+
+.soundimg {
+	width: 180px;
+	border-radius: 30px;
+	border: 5px solid #eeb13b;
+}
+
+.soundimg:hover {
+	cursor: pointer;
+}
+
+.soundimgone {
+	filter: grayscale(100%);
+}
+
+@media (max-width: 1400px) {
+	.photo {
+		width: 300px;
+	}
+
+	.relative {
+		width: 300px;
+	}
+
+	.envelope {
+		width: 500px;
+	}
+}
