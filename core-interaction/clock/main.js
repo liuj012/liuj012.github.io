@@ -34,7 +34,7 @@ $(".butter").on("animationend", function(){
       $(".burnt").css({ top: plainPosition.top, left: plainPosition.left });
       setTimeout(function(){
         $(".finished").css("display", "block");
-        }, 1000);
+        }, 180000);
     }
   });
 });
@@ -55,15 +55,15 @@ $(".button img").on("click", function() {
   clickCount++;
 
   if (clickCount === 2) {
-    $(".animatehide").css("animation-duration", "2500s");
-    $(".animatehide2").css({"animation-duration": "2500s", "animation-delay": "2400s"});
-    $(".animatehide3").css({"animation-duration": "2500s", "animation-delay": "4800s"});
+    $(".animatehide").css("animation-duration", "800s");
+    $(".animatehide2").css({"animation-duration": "800s", "animation-delay": "790s"});
+    $(".animatehide3").css({"animation-duration": "800s", "animation-delay": "1580s"});
   }
 
   if (clickCount === 3) {
-    $(".animatehide").css("animation-duration", "3s");
-    $(".animatehide2").css({"animation-duration": "3s", "animation-delay": "2s"});
-    $(".animatehide3").css({"animation-duration": "3s", "animation-delay": "4s"});
+    $(".animatehide").css("animation-duration", "400s");
+    $(".animatehide2").css({"animation-duration": "400s", "animation-delay": "390s"});
+    $(".animatehide3").css({"animation-duration": "400s", "animation-delay": "780s"});
   }
 
   if (clickCount === 4) {
@@ -112,8 +112,8 @@ $(".toasted").on("animationend", function(){
   smokeImages.forEach(function(image) {
     $(".smoke").append(image);
     
-    let randomTop = Math.random() * (bodyHeight - image.height());
-    let randomLeft = Math.random() * (bodyWidth - image.width());
+    let randomTop = Math.random() * ($(document).height() - image.height());
+    let randomLeft = Math.random() * ($(document).width() - image.width());
 
     image.css({
       top: randomTop + "px",
@@ -130,13 +130,15 @@ let initialTop = $(".plain").position().top;
 let initialLeft = $(".plain").position().left;
 
 $(".finished").on("click", function(){
-  $(".finished").css("display","none");
+  $(this).find(".done").remove();
+  $(this).find(".eat").css("display", "block");
   $(".plain, .start, .toasted, .burnt").css({ top: initialTop, left: initialLeft });
   $(".animatehide, .animatehide2, .animatehide3").css("animation-play-state", "paused");
   $(".sidebar").removeClass("sidebar");
+  $(".wrapper").css("height", "50vh");
   $(".main, .butter, .button").css("display", "none");
-  $(".images, .plain, .start, .toasted, .burnt").css({"width": "400px", "height": "400px"});
-  $(".images").css("margin-top", "-10%");
+  $(".images, .plain, .start, .toasted, .burnt").css({"width": "350px", "height": "350px"});
+  $(".images").css("margin-top", "25%");
   let breadPosition = $(".images").position();
   $(".containers").css("display", "flex");
 
@@ -144,7 +146,7 @@ $(".finished").on("click", function(){
   let centerPosition = breadPosition.left + (imagesWidth / 2);
   let spreadsWidth = $(".spreads").outerWidth();
   let spreadsLeft = centerPosition - (spreadsWidth / 2);
-  let adjustedTop = breadPosition.top - 10;
+  let adjustedTop = breadPosition.top;
   
   $(".spreads").css({
     "top": adjustedTop,
@@ -170,4 +172,28 @@ $(".avo").on("click", function(){
 $(".pb").on("click", function(){
   $(".spreads").css("display", "block");
   $(".pbspread").toggle();
+});
+
+let appendImage = false;
+
+$(".eat").on("click", function(){
+  $(this).remove();
+  $(".jam, .oil, .pb, .avo").css("display", "none");
+  appendImage = true;
+});
+
+$("body").on("click", function(event) {
+    if (!appendImage) return;
+    let image = $("<img>").attr("src", "imgs/bite.png");
+    image.css({"width": "100px", "height": "100px"});
+    let topPosition = event.pageY - (image.height() / 2);
+    let leftPosition = event.pageX - (image.width() / 2);
+
+
+    image.css({
+      "position": "absolute",
+      "top": topPosition + "px",
+      "left": leftPosition + "px"
+    });
+    $(this).append(image);
 });

@@ -1,9 +1,6 @@
 body {
-/*	background: url('imgs/bgtest.png');*/
-	background-color: #3c9f69;
-/*	background: rgb(169,219,206);
-background: linear-gradient(0deg, rgba(169,219,206,1) 0%, rgba(60,159,105,1) 16%);*/
-height: 100vh;
+	background-color: #88be94;
+	height: 100vh;
 }
 
 .wrapper{
@@ -107,17 +104,17 @@ height: 100vh;
 }
 
 .animatehide {
-	animation: animatehide 3600s forwards;
+	animation: animatehide 1200s forwards;
 }
 
 .animatehide2 {
-	animation: animatehide 3600s forwards;
-	animation-delay: 3500s;
+	animation: animatehide 1200s forwards;
+	animation-delay: 1190s;
 }
 
 .animatehide3 {
-	animation: animatehide 3600s forwards;
-	animation-delay: 7000s;
+	animation: animatehide 1200s forwards;
+	animation-delay: 2380s;
 }
 
 @keyframes animatehide {
@@ -164,15 +161,8 @@ height: 100vh;
     0 0 20px #fff;
 }
 
-.containers {
-	width: 100vw;
-	display: flex;
-	justify-content: space-evenly;
-	margin-top: -7%;
-}
-
-.containers img {
-	height: 200px;
+.eat {
+	display: none;
 }
 
 .containers img:hover {
@@ -183,6 +173,33 @@ height: 100vh;
 	display: none;
 }
 
+.jam, .pb, .oil,.avo {
+	position: absolute;
+}
+
+.jam {
+	width: 250px;
+	top: 20%;
+	margin-left: 15%;
+}
+
+.pb {
+	width: 200px;
+	top: 60%;
+	margin-left: 70%;
+}
+
+.avo {
+	width: 200px;
+	top: 70%;
+	margin-left: 10%;
+}
+
+.oil {
+	top: 5%;
+	margin-left: 80%;
+}
+
 .spreads {
 	position: absolute;
 	width: 330px;
@@ -191,13 +208,18 @@ height: 100vh;
 }
 
 .spreads img {
-	width: 330px;
+	width: 320px;
 	position: absolute;
 	display: none;
+	margin-top: 26%;
 }
 
 .jamspread {
 	top: 3%;
+}
+
+.pbspread {
+	width: 300px;
 }
 
 .avospread {
@@ -206,4 +228,10 @@ height: 100vh;
 
 .smoke img {
 	z-index: 1000;
+}
+
+.bite {
+	position: absolute;
+	height: 98vh;
+	width: 98vw;
 }
