@@ -111,10 +111,10 @@ two.addEventListener("click", changeImageOfTwo);
 
 function changeImageOfFour() {
         if (four.classList.contains("relative")) {
-            if (four.src.endsWith("4.jpg")) {
+            if (four.src.endsWith("four.jpg")) {
                 four.src = "postcard3.png";
             } else {
-                four.src = "4.jpg";
+                four.src = "four.jpg";
             }
         }
     }
