@@ -34,7 +34,7 @@ $(".butter").on("animationend", function(){
       $(".burnt").css({ top: plainPosition.top, left: plainPosition.left });
       setTimeout(function(){
         $(".finished").css("display", "block");
-        }, 5000);
+        }, 2000);
     }
   });
 });
@@ -61,9 +61,9 @@ $(".button img").on("click", function() {
   }
 
   if (clickCount === 3) {
-    $(".animatehide").css("animation-duration", "35s");
-    $(".animatehide2").css({"animation-duration": "10s", "animation-delay": "33s"});
-    $(".animatehide3").css({"animation-duration": "10s", "animation-delay": "47s"});
+    $(".animatehide").css("animation-duration", "7s");
+    $(".animatehide2").css({"animation-duration": "5s", "animation-delay": "6s"});
+    $(".animatehide3").css({"animation-duration": "5s", "animation-delay": "10s"});
   }
 
   if (clickCount === 4) {
