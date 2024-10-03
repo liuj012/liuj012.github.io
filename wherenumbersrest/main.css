@@ -1,18 +1,26 @@
 body {
-	margin: 0;
+	margin:0;
 }
 
 .header{
 	width: 100vw;
-	background: linear-gradient(0deg, rgba(250,218,153,0) 0%, rgba(255,255,255,1) 46%);
-	position: sticky;
-	height: 4em;
+	background: linear-gradient(0deg, rgba(250,218,153,0) 0%, rgba(255,255,255,1) 60%);
+	position: fixed;
+	height: 5em;
 }
 
 .about {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	padding: 0.5em;
+}
+
+.body {
+	padding-top: 2em;
+}
+
+.line {
+	border-top: 1px solid black;
 }
 
 .writing {
