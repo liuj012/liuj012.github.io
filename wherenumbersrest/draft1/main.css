@@ -1,0 +1,61 @@
+body {
+	margin: 0;
+}
+
+.header{
+	width: 100vw;
+	background: linear-gradient(0deg, rgba(250,218,153,0) 0%, rgba(255,255,255,1) 46%);
+	position: sticky;
+	height: 4em;
+}
+
+.about {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	padding: 0.5em;
+}
+
+.writing {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 2em;
+	width: 70vw;
+}
+
+.text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.sources {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	columns: 2;
+	margin-left: 5em;
+}
+
+.letter:hover {
+	text-decoration: underline;
+	  text-shadow: 0 0 10px #F5D633,
+   		0 0 10px #F5D633,
+    	0 0 20px #F5D633,
+    	0 0 20px #F5D633;
+    cursor: pointer;
+}
+
+img{
+	width: 20em;
+}
+
+img:hover {
+	box-shadow: 0 0 80px #F5D633, 
+    0 0 80px #F5D633;
+    cursor: pointer;
+}
+
+.imgA, .imgB {
+	display: none;
+	position: absolute;
+}
+
