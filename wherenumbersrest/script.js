@@ -90,16 +90,32 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('.about').click(function() {
         if ($('.body').is(':visible') && $('.nav').is(':visible')) {
-            $('.body, .nav').hide();
+            $('.body, .nav, .images, .map').hide();
             $('.body2').addClass('body2show');
             $('.body2').removeClass('body2');  
         } else {
-            $('.body, .nav').show();
+            $('.body, .nav, .images, .map').show();
             $('.body2show').addClass('body2');
             $('.body2').removeClass('body2show'); 
         }
     });
 });
+
+$(document).ready(function() {
+    $('.indexbutton').click(function() {
+        if ($('.body').is(':visible') && $('.nav').is(':visible')){
+            $('.body, .nav, .images, .body2show').hide();
+            $('.body3').addClass('body3show');
+            $('.body3').removeClass('body3');  
+        } else {
+            $('.body, .nav, .images').show();
+            $('.body3show').addClass('body3');
+            $('.body3').removeClass('body3show'); 
+        }
+    });
+});
+
+
 
 
 
