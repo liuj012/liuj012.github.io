@@ -255,7 +255,7 @@ img{
 	grid-template-columns: 0.75fr 2.25fr;
 	width: 99vw;
 	padding-top: 4rem;
-	column-gap: 4rem;
+	column-gap: 2rem;
 }
 
 .mapindex {
